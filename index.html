@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Faculdade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trabalho de Faculdade</h1>
+    </header>
+    <main>
+        <section class="buttons">
+            <button class="option-button" onclick="showData('cards')">Ver Cartas</button>
+            <button class="option-button" onclick="showData('tournaments')">Ver Torneios</button>
+            <button class="option-button" onclick="showData('top_clans')">Ver Melhores Clãs</button>
+        </section>
+        <section class="visor">
+            <h2 id="selected-option">Nenhuma opção selecionada</h2>
+        </section>
+        <section class="output" id="output">
+            <!-- Aqui serão mostradas as informações das consultas -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Trabalho de Faculdade</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
