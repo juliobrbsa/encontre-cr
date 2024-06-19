@@ -1,38 +1,38 @@
-#Clash Royale API Viewer
+# Clash Royale API Viewer
 
 Este script Python permite visualizar informações sobre cartas, torneios e os
 melhores clãs no jogo Clash Royale utilizando a API oficial do jogo.
 
-##Funcionalidades
--Ver Cartas: Obtém e exibe uma lista de cartas disponíveis no Clash Royale,
+## Funcionalidades
+- Ver Cartas: Obtém e exibe uma lista de cartas disponíveis no Clash Royale,
 incluindo o nome e o nível máximo de cada carta.
--Ver Torneios: Obtém e exibe uma lista de torneios, incluindo a tag, nome,
+- Ver Torneios: Obtém e exibe uma lista de torneios, incluindo a tag, nome,
 status e duração de cada torneio.
--Listar os Melhores Clãs: Obtém e exibe uma lista dos melhores clãs 
+- Listar os Melhores Clãs: Obtém e exibe uma lista dos melhores clãs 
 globalmente, incluindo a posição, nome do clã, tag do clã e o número de 
 troféus.
 
-#Pré-requisitos
-##-Python 3.x
-##-Biblioteca requests
+# Pré-requisitos
+## - Python 3.x
+## - Biblioteca requests
 
-##Instalação
+## Instalação
 
-1-Clone o repositório ou faça o download do arquivo.
-2-Instale a biblioteca requests se ainda não estiver instalada:
+ 1 - Clone o repositório ou faça o download do arquivo.
+ 2 - Instale a biblioteca requests se ainda não estiver instalada:
 pip install requests
 
-##Uso
+## Uso
 
-1-Substitua o valor do cabeçalho de autorização (Authorization) no código
+1- Substitua o valor do cabeçalho de autorização (Authorization) no código
 com o seu próprio token de acesso da API do Clash Royale.
-2-Execute o script:
+2- Execute o script:
 python nome_do_arquivo.py
-3-Siga as instruções no menu para escolher a opção desejada.
+3- Siga as instruções no menu para escolher a opção desejada.
 
-##Exemplo
+## Exemplo
 
-##Ao executar o script, o menu será exibido:
+## Ao executar o script, o menu será exibido:
 
 Escolha uma das opções:
 1. Ver cartas
@@ -41,20 +41,20 @@ Escolha uma das opções:
 4. Sair
 Digite o número correspondente à opção desejada e pressione Enter.
 
-##Notas:
+## Notas:
 
--Certifique-se de que o seu token de acesso da API está válido e atualizado.
--O script faz chamadas à API do Clash Royale, então uma conexão com a internet é necessária.
--As informações exibidas dependem dos dados retornados pela API do Clash Royale.
+- Certifique-se de que o seu token de acesso da API está válido e atualizado.
+- O script faz chamadas à API do Clash Royale, então uma conexão com a internet é necessária.
+- As informações exibidas dependem dos dados retornados pela API do Clash Royale.
 
-##Licença
+## Licença
 
 Este projeto não está vinculado a uma licença específica. Fique à vontade para modificar e utilizar conforme sua necessidade.
 
-#Autor:
-Lucas Porangaba.
-Luigi Gomes.
-João Paulo.
-Julio Barbosa.
-Matheus Oliveira.
-João Victor.
+## Contribuidores
+
+- [João Victor Araújo](https://github.com/JoaoArauto) <br>
+- [Júlio Barbosa](https://github.com/juliobrbsa) <br>
+- [Matheus Oliveira](https://github.com/matheussoliveira323) <br>
+- [Luigi Gomes](https://github.com/LGAP159) <br>
+- [João Paulo](https://github.com/joaopaulsl) <br>
