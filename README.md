@@ -13,8 +13,8 @@ globalmente, incluindo a posição, nome do clã, tag do clã e o número de
 troféus.
 
 # Pré-requisitos
-## - Python 3.x
-## - Biblioteca requests
+- Python 3.x <br>
+- - Biblioteca requests <br>
 
 ## Instalação
 
