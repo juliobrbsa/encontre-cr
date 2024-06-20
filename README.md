@@ -13,7 +13,7 @@ globalmente, incluindo a posição, nome do clã, tag do clã e o número de
 troféus.
 
 # Pré-requisitos
-- Python 3.x <br>
+- Python 3.12 <br>
 - Biblioteca requests
 
 ## Instalação
@@ -29,20 +29,18 @@ pip install requests <br>
 <br>
 **MacOS:** Para instalar requests no MacOS, seria necessário Python (de preferência a versão mais recente) e a versão mais recente do pip, portanto. <br>
 - Para instalar o pip no MacOS:
-  - sudo easy_install pip
+  - sudo easy_install pip <br>
 sudo pip install --upgrade pip
 - Agora, para instalar requests:
   - pip install requests <br>
 
 ## Uso
 
-1- Substitua o valor do cabeçalho de autorização (Authorization) no código
+1. Substitua o valor do cabeçalho de autorização (Authorization) no código
 com o seu próprio token de acesso da API do Clash Royale. <br>
-2- Execute o script:
+2. Execute o script:
 python nome_do_arquivo.py <br>
-3- Siga as instruções no menu para escolher a opção desejada.
-
-## Exemplo
+3. Siga as instruções no menu para escolher a opção desejada.
 
 ## Ao executar o script, o menu será exibido:
 
