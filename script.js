@@ -6,16 +6,16 @@ menu.addEventListener('click', (e) => {
         e.preventDefault();
         const escolha = e.target.id;
         switch (escolha) {
-            case 'er-cartas':
+            case 'ver-cartas':
                 verCartas();
                 break;
-            case 'er-torneios':
+            case 'ver-torneios':
                 verTorneios();
                 break;
-            case 'er-melhores-clas':
+            case 'ver-melhores-clas':
                 verMelhoresClas();
                 break;
-            case 'air':
+            case 'sair':
                 console.log('Saindo do programa.');
                 break;
             default:
@@ -31,8 +31,8 @@ function verCartas() {
             'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjU4ODEzNmJiLTVlNjUtNDEzYy1hYmUzLWM3YzhhZmZhMTE0ZiIsImlhdCI6MTcxODMxNzk2Niwic3ViIjoiZGV2ZWxvcGVyLzk3YTQ3N2U3LWU4NmEtYWE4Yy0zNzI4LWU5ZjE5MDVjNjZhZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI0NS4xNjEuNzUuMTE5Il0sInR5cGUiOiJjbGllbnQifV19.CcChuTBxJGr1JkCF50YzVmWzx7BxC-YPxMS9IOddYGGOVHVcRf_zy2K08T6HDV87uQ3TjJ_FzVM5IJFGu-4o-w'
         }
     })
-   .then(response => response.json())
-   .then(data => {
+    .then(response => response.json())
+    .then(data => {
         const cartas = data.items;
         conteudo.innerHTML = '';
         cartas.forEach((carta) => {
@@ -45,7 +45,7 @@ function verCartas() {
             conteudo.appendChild(card);
         });
     })
-   .catch(error => console.error('Erro ao acessar a API de cartas:', error));
+    .catch(error => console.error('Erro ao acessar a API de cartas:', error));
 }
 
 function verTorneios() {
@@ -55,8 +55,8 @@ function verTorneios() {
             'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjU4ODEzNmJiLTVlNjUtNDEzYy1hYmUzLWM3YzhhZmZhMTE0ZiIsImlhdCI6MTcxODMxNzk2Niwic3ViIjoiZGV2ZWxvcGVyLzk3YTQ3N2U3LWU4NmEtYWE4Yy0zNzI4LWU5ZjE5MDVjNjZhZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI0NS4xNjEuNzUuMTE5Il0sInR5cGUiOiJjbGllbnQifV19.CcChuTBxJGr1JkCF50YzVmWzx7BxC-YPxMS9IOddYGGOVHVcRf_zy2K08T6HDV87uQ3TjJ_FzVM5IJFGu-4o-w'
         }
     })
-   .then(response => response.json())
-   .then(data => {
+    .then(response => response.json())
+    .then(data => {
         const torneios = data.items;
         conteudo.innerHTML = '';
         torneios.forEach((torneio) => {
@@ -71,7 +71,7 @@ function verTorneios() {
             conteudo.appendChild(card);
         });
     })
-   .catch(error => console.error('Erro ao acessar a API de torneios:', error));
+    .catch(error => console.error('Erro ao acessar a API de torneios:', error));
 }
 
 function verMelhoresClas() {
@@ -81,8 +81,8 @@ function verMelhoresClas() {
             'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjU4ODEzNmJiLTVlNjUtNDEzYy1hYmUzLWM3YzhhZmZhMTE0ZiIsImlhdCI6MTcxODMxNzk2Niwic3ViIjoiZGV2ZWxvcGVyLzk3YTQ3N2U3LWU4NmEtYWE4Yy0zNzI4LWU5ZjE5MDVjNjZhZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI0NS4xNjEuNzUuMTE5Il0sInR5cGUiOiJjbGllbnQifV19.CcChuTBxJGr1JkCF50YzVmWzx7BxC-YPxMS9IOddYGGOVHVcRf_zy2K08T6HDV87uQ3TjJ_FzVM5IJFGu-4o-w'
         }
     })
-  .then(response => response.json())
-  .then(data => {
+    .then(response => response.json())
+    .then(data => {
         const clans = data.items;
         conteudo.innerHTML = '';
         clans.forEach((clan, index) => {
@@ -97,5 +97,5 @@ function verMelhoresClas() {
             conteudo.appendChild(card);
         });
     })
-  .catch(error => console.error('Erro ao acessar a API de clãs:', error));
+    .catch(error => console.error('Erro ao acessar a API de clãs:', error));
 }
