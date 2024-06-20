@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +9,13 @@
 <body>
   <div class="container">
     <header>
-        <h1>Search</h1>
-      <h1>Clash Royale API</h1>
+        <h1>Clash Royale API</h1>
     </header>
     <main>
         <section class="buttons">
-            <button class="option-button" onclick="fetchData('cards')">Ver Cartas</button>
-            <button class="option-button" onclick="fetchData('tournaments')">Ver Torneios</button>
-            <button class="option-button" onclick="fetchData('top_clans')">Ver Melhores Clãs</button>
+            <button class="option-button" onclick="showData('cards')">Ver Cartas</button>
+            <button class="option-button" onclick="showData('tournaments')">Ver Torneios</button>
+            <button class="option-button" onclick="showData('top_clans')">Ver Melhores Clãs</button>
         </section>
         <section class="visor">
             <h2 id="selected-option">Nenhuma opção selecionada</h2>
@@ -29,14 +27,11 @@
     <footer>
         <p>&copy; 2024 SearchCR</p>
     </footer>
-
-    <script src="script.js"></script>
     <nav>
       <button onclick="fetchData('cartas')">Cartas</button>
       <button onclick="fetchData('torneios')">Torneios</button>
       <button onclick="fetchData('clans')">Melhores Clãs</button>
     </nav>
-
     <div id="resultado">
       <!-- Aqui será exibido o conteúdo dos resultados da API -->
     </div>
@@ -45,7 +40,12 @@
   <script>
     function fetchData(endpoint) {
       fetch('/' + endpoint)
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
         .then(data => {
           console.log("Dados recebidos:", data);  // Log para depuração
           const resultadoDiv = document.getElementById('resultado');
@@ -64,6 +64,12 @@
         .catch(error => {
           console.error('Erro ao buscar dados:', error);
         });
+    }
+
+    function showData(type) {
+      const selectedOption = document.getElementById('selected-option');
+      selectedOption.textContent = `Opção selecionada: ${type}`;
+      fetchData(type);
     }
   </script>
 </body>
