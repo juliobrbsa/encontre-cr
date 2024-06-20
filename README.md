@@ -5,9 +5,9 @@ melhores clãs no jogo Clash Royale utilizando a API oficial do jogo.
 
 ## Funcionalidades
 - Ver Cartas: Obtém e exibe uma lista de cartas disponíveis no Clash Royale,
-incluindo o nome e o nível máximo de cada carta.
+incluindo o nome e o nível máximo de cada carta.<br>
 - Ver Torneios: Obtém e exibe uma lista de torneios, incluindo a tag, nome,
-status e duração de cada torneio.
+status e duração de cada torneio.<br>
 - Listar os Melhores Clãs: Obtém e exibe uma lista dos melhores clãs 
 globalmente, incluindo a posição, nome do clã, tag do clã e o número de 
 troféus.
@@ -18,7 +18,7 @@ troféus.
 
 ## Instalação
 
- 1 - Clone o repositório ou faça o download do arquivo.
+ 1 - Clone o repositório ou faça o download do arquivo.<br>
  2 - Instale a biblioteca requests se ainda não estiver instalada:
 pip install requests
 
@@ -58,3 +58,4 @@ Este projeto não está vinculado a uma licença específica. Fique à vontade p
 - [Matheus Oliveira](https://github.com/matheussoliveira323) <br>
 - [Luigi Gomes](https://github.com/LGAP159) <br>
 - [João Paulo](https://github.com/joaopaulsl) <br>
+- [Lucas Porangaba](https://github.com/luquitaa11) <br>
