@@ -14,7 +14,7 @@ troféus.
 
 # Pré-requisitos
 - Python 3.x <br>
-- - Biblioteca requests <br>
+- Biblioteca requests
 
 ## Instalação
 
@@ -25,27 +25,27 @@ pip install requests
 ## Uso
 
 1- Substitua o valor do cabeçalho de autorização (Authorization) no código
-com o seu próprio token de acesso da API do Clash Royale.
+com o seu próprio token de acesso da API do Clash Royale. <br>
 2- Execute o script:
-python nome_do_arquivo.py
+python nome_do_arquivo.py <br>
 3- Siga as instruções no menu para escolher a opção desejada.
 
 ## Exemplo
 
 ## Ao executar o script, o menu será exibido:
 
-Escolha uma das opções:
-1. Ver cartas
-2. Ver torneios
-3. Listar os melhores clãs
-4. Sair
-Digite o número correspondente à opção desejada e pressione Enter.
+Escolha uma das opções:<br>
+1. Ver cartas<br>
+2. Ver torneios<br>
+3. Listar os melhores clãs<br>
+4. Sair<br>
+Digite o número correspondente à opção desejada e pressione Enter.<br>
 
 ## Notas:
 
-- Certifique-se de que o seu token de acesso da API está válido e atualizado.
-- O script faz chamadas à API do Clash Royale, então uma conexão com a internet é necessária.
-- As informações exibidas dependem dos dados retornados pela API do Clash Royale.
+- Certifique-se de que o seu token de acesso da API está válido e atualizado.<br>
+- O script faz chamadas à API do Clash Royale, então uma conexão com a internet é necessária.<br>
+- As informações exibidas dependem dos dados retornados pela API do Clash Royale.<br>
 
 ## Licença
 
