@@ -18,9 +18,21 @@ troféus.
 
 ## Instalação
 
- 1 - Clone o repositório ou faça o download do arquivo.<br>
- 2 - Instale a biblioteca requests se ainda não estiver instalada:
-pip install requests
+1. Clone o repositório ou faça o download do arquivo.<br>
+2. Instale a biblioteca requests se ainda não estiver instalada:
+
+**Windows:** Abra o prompt de comando do Windows e execute o seguinte comando: <br>
+python -m pip install requests <br>
+<br>
+**Linux:** Para instalar requests no Linux, seria necessário Python (de preferência a versão mais recente) e a versão mais recente do pip. Após isso, execute o seguinte comando:<br>
+pip install requests <br>
+<br>
+**MacOS:** Para instalar requests no MacOS, seria necessário Python (de preferência a versão mais recente) e a versão mais recente do pip, portanto. <br>
+- Para instalar o pip no MacOS:
+  - sudo easy_install pip
+sudo pip install --upgrade pip
+- Agora, para instalar requests:
+  - pip install requests <br>
 
 ## Uso
 
