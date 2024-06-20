@@ -3,7 +3,8 @@ const conteudo = document.getElementById('conteudo');
 
 menu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
-        e.preventDefault();
+        e.preventDefault(); // Evita o comportamento padrão de navegação do link
+
         const escolha = e.target.id;
         switch (escolha) {
             case 'ver-cartas':
@@ -28,7 +29,7 @@ function verCartas() {
     fetch('https://api.clashroyale.com/v1/cards', {
         headers: {
             'Content-type': 'application/json',
-            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjU4ODEzNmJiLTVlNjUtNDEzYy1hYmUzLWM3YzhhZmZhMTE0ZiIsImlhdCI6MTcxODMxNzk2Niwic3ViIjoiZGV2ZWxvcGVyLzk3YTQ3N2U3LWU4NmEtYWE4Yy0zNzI4LWU5ZjE5MDVjNjZhZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI0NS4xNjEuNzUuMTE5Il0sInR5cGUiOiJjbGllbnQifV19.CcChuTBxJGr1JkCF50YzVmWzx7BxC-YPxMS9IOddYGGOVHVcRf_zy2K08T6HDV87uQ3TjJ_FzVM5IJFGu-4o-w'
+            'Authorization': 'Bearer SEU_TOKEN_AQUI' // Substituir pelo seu token de autorização
         }
     })
    .then(response => response.json())
@@ -52,7 +53,7 @@ function verTorneios() {
     fetch('https://api.clashroyale.com/v1/tournaments?name=a', {
         headers: {
             'Content-type': 'application/json',
-            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjU4ODEzNmJiLTVlNjUtNDEzYy1hYmUzLWM3YzhhZmZhMTE0ZiIsImlhdCI6MTcxODMxNzk2Niwic3ViIjoiZGV2ZWxvcGVyLzk3YTQ3N2U3LWU4NmEtYWE4Yy0zNzI4LWU5ZjE5MDVjNjZhZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI0NS4xNjEuNzUuMTE5Il0sInR5cGUiOiJjbGllbnQifV19.CcChuTBxJGr1JkCF50YzVmWzx7BxC-YPxMS9IOddYGGOVHVcRf_zy2K08T6HDV87uQ3TjJ_FzVM5IJFGu-4o-w'
+            'Authorization': 'Bearer SEU_TOKEN_AQUI' // Substituir pelo seu token de autorização
         }
     })
    .then(response => response.json())
@@ -78,7 +79,7 @@ function verMelhoresClas() {
     fetch('https://api.clashroyale.com/v1/locations/global/rankings/clans', {
         headers: {
             'Content-type': 'application/json',
-            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjU4ODEzNmJiLTVlNjUtNDEzYy1hYmUzLWM3YzhhZmZhMTE0ZiIsImlhdCI6MTcxODMxNzk2Niwic3ViIjoiZGV2ZWxvcGVyLzk3YTQ3N2U3LWU4NmEtYWE4Yy0zNzI4LWU5ZjE5MDVjNjZhZiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI0NS4xNjEuNzUuMTE5Il0sInR5cGUiOiJjbGllbnQifV19.CcChuTBxJGr1JkCF50YzVmWzx7BxC-YPxMS9IOddYGGOVHVcRf_zy2K08T6HDV87uQ3TjJ_FzVM5IJFGu-4o-w'
+            'Authorization': 'Bearer SEU_TOKEN_AQUI' // Substituir pelo seu token de autorização
         }
     })
    .then(response => response.json())
